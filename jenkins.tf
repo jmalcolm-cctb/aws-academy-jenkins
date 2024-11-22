@@ -17,7 +17,7 @@ resource "aws_instance" "app_server" {
         "sudo docker exec jenkins-server apt install -y curl",
         "sudo docker exec jenkins-server curl -fsSL https://get.docker.com -o get-docker.sh",
         "sudo docker exec jenkins-server sh get-docker.sh",
-        "sudo docker exec jenkins-server chmod 666 /var/run/docker.sock":q
+        "sudo docker exec jenkins-server chmod 666 /var/run/docker.sock"
      ]
    }
 
